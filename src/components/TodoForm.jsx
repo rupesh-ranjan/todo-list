@@ -23,7 +23,8 @@ function TodoForm() {
             />
             <button
                 type="submit"
-                className="rounded-r-lg px-3 py-1 bg-green-600 text-white shrink-0"
+                className={`rounded-r-lg px-3 py-1 text-white shrink-0 ${todo.trim() === "" ? "bg-gray-500" : "cursor-pointer bg-green-600 hover:bg-green-700"}`}
+                disabled={todo.trim() === "" ? true : false}
             >
                 Add
             </button>
