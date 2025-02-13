@@ -1,5 +1,5 @@
 import { createContext, useContext } from "react";
-
+/*eslint no-unused-vars: "error"*/
 export const TodoContext = createContext({
     todos: [{ id: 1, todo: "Todo message", completed: false }],
     addTodo: (todo) => {},
